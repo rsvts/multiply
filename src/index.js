@@ -1,6 +1,6 @@
-const bigInt = require('big-integer');
+// const bigInt = require('big-integer');
 module.exports = function multiply(first, second) {
 
-    return bigInt(first).multiply(second).toString();
+    return BigInt(BigInt(first) * BigInt(second)).toString();
 
 }
